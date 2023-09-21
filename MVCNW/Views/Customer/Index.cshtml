@@ -1,0 +1,18 @@
+﻿@model MVCNW.Models.CustomerViewModel
+
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+<h1>Index</h1>
+
+
+
+<form asp-controller="Customer" asp-action="Details">
+    <select asp-for="id" asp-items="Model.orderList"></select>
+    <button type="submit">Details</button>
+</form>
